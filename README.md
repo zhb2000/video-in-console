@@ -1,6 +1,8 @@
 # Video in JavaScript Console
 最近整的一个烂活，在 JavaScript 控制台中播放华强买瓜。
 
+[Video in JavaScript Console](https://zhb2000.github.io/video-in-console)
+
 ![screen record](./assets/screen-record.gif)
 
 ## 两种输出方式
