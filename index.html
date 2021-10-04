@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video in JavaScript Console</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+        <div>
+            <video id="video" style="display: block;" src="./assets/huaqiang.mp4" height="300" controls="controls"
+                crossorigin="anonymous" preload="auto" onplay="videoPlay()" onpause="videoPause()">
+            </video>
+            <p><button id="playBtn" class="play-btn" onclick="playBtnClick()">▶️ Play</button></p>
+            <p class="hint">Hint: Press F12 to open the console to watch the video.</p>
+            <p>
+                <span>Output: </span>
+                <label><input type="radio" name="outputType" checked onclick="selectImageOut()">image</label>
+                <label><input type="radio" name="outputType" onclick="selectTextOut()">text</label>
+            </p>
+            <p id="imagePanel">
+                <span>Resolution (width): </span>
+                <span>40px</span>
+                <input id="capWidthBar" type="range" min="40" max="192" value="40">
+                <span>192px</span>
+            </p>
+            <div id="textPanel" style="display: none;">
+                <p>
+                    <span>Clear Screen: </span>
+                    <span>5</span>
+                    <input id="clsBar" type="range" min="5" max="20" value="5">
+                    <span>18</span>
+                </p>
+                <div>Increasing this value reduces flicker, but performance will be worse.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

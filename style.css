@@ -1,0 +1,21 @@
+.play-btn {
+    width: 100px;
+    background: white;
+    color: dodgerblue;
+    border: dodgerblue 1px solid;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    transition: 0.3s;
+    color: white;
+    background: lightblue;
+}
+
+.hint {
+    font-size: 18px;
+    font-weight: bold;
+}
