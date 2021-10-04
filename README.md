@@ -1,7 +1,7 @@
 # Video in JavaScript Console
-最近整的一个烂活。
+最近整的一个烂活，在 JavaScript 控制台中播放华强买瓜。
 
-![screenshot](./assets/screenshot.png)
+![screen record](./assets/screen-record.gif)
 
 ## 两种输出方式
 ### 文本 + CSS
